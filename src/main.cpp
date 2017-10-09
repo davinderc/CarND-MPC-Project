@@ -102,7 +102,7 @@ int main() {
           psi = psi - v*steer_value/Lf*latency;
           v = v + throttle_value*latency;
 
-          // Rotate car reference frame to make it horizontal instead of vertical for ease of calcs
+          // Rotate car reference frame to make it horizontal instead of vertical for ease of calculations
           for(int i = 0; i < ptsx.size(); i++){
             double shift_x = ptsx[i] - px;
             double shift_y = ptsy[i] - py;
